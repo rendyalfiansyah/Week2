@@ -1,13 +1,13 @@
-import base.Produk;
 
 public class Main{
     public static void main(String[] args) {
-        produk p = new produk("Indoie goreng", 3500, 100, "makanan");
-         System.out.println(p.stok);
-         System.out.println(p.harga);
-         System.out.println(p.kategori);
-         System.out.println(p.nama);
+    produk p = new produk("baju", 1000.0, 10, "unique");
 
-         p.tampilInfo();
-    }
+    System.out.println(p.getNama());
+    System.out.println(p.getHarga());
+
+    p.setHarga(20000.0);
+    System.out.println(p.getHarga());
+
+ }
 }

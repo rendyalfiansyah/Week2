@@ -18,6 +18,7 @@ public class produk {
     public double getHarga(){return harga;}
     public int getStok () {return stok;}
 
+    
     public void setHarga (double harga){
         this.harga = harga;
     }
