@@ -1,10 +1,10 @@
-package base;
+
 
 public class produk {
     private String nama;
     String kategori;
-    protected double harga;
-    public int stok;
+    private double harga;
+    private int stok;
 
     public produk(String nama, double harga, int stok, String kategori){
         this.nama = nama;
@@ -13,6 +13,11 @@ public class produk {
         this.kategori = kategori;
 
     }
+
+    public String getNama (){return nama;}
+    public double getHarga(){return harga;}
+    public int getStok () {return stok;}
+    
 
     public void tampilInfo(){
         System.out.println("produk: "+nama);
