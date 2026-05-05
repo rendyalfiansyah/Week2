@@ -13,8 +13,8 @@ public class Makanan extends produk {
         System.out.println("Masa Expired:" + expired + "Hari");
     } 
   
-    public void setExpired (int expired){
-    if (t ype. equals("Nasi")){
+    public void setExpired (int expired, String type){ // penambahan overloading
+    if (type. equals("Nasi")){
         if(expired < 0){
             System.out.println("Masa Expired Tidak Boleh Negatif");
         }else{
