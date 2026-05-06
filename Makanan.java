@@ -38,7 +38,11 @@ public class Makanan {
      public double hitungHargaSetelahDiskon(int jumlahBeli){
         return hitungTotalHarga(jumlahBeli) - hitungDiskon(jumlahBeli);
     }
-     
+    
+    @Override
+    public double hitungPajak(double harga) {
+        return harga * 0.10;
+    }
 
     public void setExpired(int expired, String type) { // Setter untuk atribut expired
         if (type.equals("Nasi")) {
