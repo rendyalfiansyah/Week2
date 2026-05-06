@@ -22,6 +22,7 @@ public class Makanan {
         System.out.println("MAKANAN");
         System.out.println("Kategori:" + kategori);
         System.out.println("Kedaluwarsa:" + kedaluwarsa);
+        System.out.println("-------");
     }
 
 
@@ -31,14 +32,14 @@ public class Makanan {
         return 0;
     }
 
-    public void setExpired(int expired) { // Setter untuk atribut expired
-        if (expired <= 0) {
-            System.out.println("Masa expired tidak boleh nol atau negatif.");
-        } else {
-            this.expired = expired;
-        }
-    } 
-    
+     public double hitungDiskon(int jumlahBeli, double persenDiskon){
+        return hitungTotalHarga(jumlahBeli) * (persenDiskon / 100);
+    }
+     public double hitungHargaSetelahDiskon(int jumlahBeli){
+        return hitungTotalHarga(jumlahBeli) - hitungDiskon(jumlahBeli);
+    }
+     
+
     public void setExpired(int expired, String type) { // Setter untuk atribut expired
         if (type.equals("Nasi")) {
             if (expired > 4){
