@@ -9,6 +9,13 @@ public Elektronik (String nama, String merek, double harga, int stok, int garans
     this. garansiTahun = garansiTahun;
 }
 
+public String getMerek(){
+    return merek;
+}
+
+public int getGaransiTahun(){
+    return garansiTahun;
+}
       super(nama, harga, stok, kategori);
       this.garansi = garansi;
     }
