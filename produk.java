@@ -8,7 +8,6 @@ abstract class produk {
         this.nama = nama;
         this.harga = harga;
         this.stok = stok;
-        this.kategori = kategori;
 
     }
     public String getNama (){

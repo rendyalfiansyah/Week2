@@ -1,8 +1,13 @@
-public class Makanan extends produk {
-    private int expired; // Menambahkan atribut expired untuk kelas makanan
+public class Makanan {
+
+} extends produk {
+    private int kedaluwarsa;
+    private Strinng kategori;
+    
     public Makanan(String nama, double harga, int stok, String kategori, int expired) { // Konstruktor untuk kelas makanan
         super(nama, harga, stok, kategori);
         this.expired = expired;
+        
     }
 
     @Override
