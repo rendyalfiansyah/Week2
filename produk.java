@@ -11,10 +11,15 @@ abstract class produk {
         this.kategori = kategori;
 
     }
-
-    public String getNama (){return nama;}
-    public double getHarga(){return harga;}
-    public int getStok () {return stok;}
+    public String getNama (){
+        return nama;
+    }
+    public double getHarga(){
+        return harga;
+    }
+    public int getStok () {
+        return stok;
+    }
 
     
     public void setHarga (double harga){
@@ -23,7 +28,9 @@ abstract class produk {
      public void setStok (int stok){
         this.stok = stok;
     }
-    
+     public double hitungTotalHarga(int jumlahBeli){
+        return harga * jumlahBeli;
+     }
 
     public void tampilInfo(){
         System.out.println("produk: "+nama);
