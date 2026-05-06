@@ -22,9 +22,13 @@ public class Makanan {
         System.out.println("MAKANAN");
         System.out.println("Kategori:" + kategori);
         System.out.println("Kedaluwarsa:" + kedaluwarsa);
-        
-        super.tampilInfo();
-        System.out.println("Expired : " + expired + " hari");
+    }
+
+
+    public doule hitungDiskon(int jumlahBeli) {
+        if(jumlahBeli >= 10)
+            return hitungTotalHarga(jumlahBeli)* 0.05;
+        return 0;
     }
 
     public void setExpired(int expired) { // Setter untuk atribut expired
