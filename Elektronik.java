@@ -1,5 +1,9 @@
 public class Elektronik extends produk {
-    private int garansi;
+    private String merek;
+    private int garansiTahun;
+    private static final double PPN = 0.11;
+
+    
     public Elektronik (String nama, double harga, int stok, String kategori, int garansi){
       super(nama, harga, stok, kategori);
       this.garansi = garansi;
