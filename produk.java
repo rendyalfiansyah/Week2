@@ -1,6 +1,4 @@
-import javax.swing.border.StrokeBorder;
-
-public class produk {
+abstract class produk {
     private String nama;
     String kategori;
     private double harga;
@@ -40,3 +38,6 @@ public class produk {
     }
 
 
+// public abstract void tampilInfo();
+   // super.tampilInfo();
+// public abstract  double 

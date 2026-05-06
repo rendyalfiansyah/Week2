@@ -1,33 +1,39 @@
 public class Makanan extends produk {
-    private int expired;
-
-    public Makanan(String nama, double harga, int stok, String kategori, int expired) {
+    private int expired; // Menambahkan atribut expired untuk kelas makanan
+    public Makanan(String nama, double harga, int stok, String kategori, int expired) { // Konstruktor untuk kelas makanan
         super(nama, harga, stok, kategori);
         this.expired = expired;
     }
-    
-    @Override 
-    public void tampilInfo(){
-        System.out.println("MAKANAN");
+
+    @Override
+    public void tampilInfo() { // Override method
+        System.out.println("Makanan");
         super.tampilInfo();
-        System.out.println("Masa Expired:" + expired + "Hari");
+        System.out.println("Expired : " + expired + " hari");
+    }
+
+    public void setExpired(int expired) { // Setter untuk atribut expired
+        if (expired <= 0) {
+            System.out.println("Masa expired tidak boleh nol atau negatif.");
+        } else {
+            this.expired = expired;
+        }
     } 
-  
-    public void setExpired (int expired, String type){ // penambahan overloading
-    if (type. equals("Nasi")){
-        if(expired < 0){
-            System.out.println("Masa Expired Tidak Boleh Negatif");
-        }else{
-            this.expired = expired;
-     }else{
-        if (expired < 2) {
-         System.out.println ("Masa Expired Tidak Boleh Negatif");
-        }else{
-            this.expired = expired;
-        }
-        }
-        }
-        }
-
-
     
+    public void setExpired(int expired, String type) { // Setter untuk atribut expired
+        if (type.equals("Nasi")) {
+            if (expired > 4){
+                System.out.println("Masa Expired Tidak Boleh Negatif ");
+            } else {
+                this.expired = expired;
+            }
+        } else {
+            if (expired < 2) {
+                System.out.println("Masa expired tidak boleh nol atau negatif.");
+            } else {
+                this.expired = expired;
+            }
+        }
+    
+    }
+}
