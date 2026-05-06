@@ -30,8 +30,22 @@ abstract class produk {
     }
      public double hitungTotalHarga(int jumlahBeli){
         return harga * jumlahBeli;
-     }
+    }
 
+    public void beli(int jumlahBeli){
+        if (jumlahBeli <= 0){
+            System.out.println("Jumlah beli harus lebih dari 0!");
+            return;
+        }
+        if (jumlahBeli > 0){
+            System.out.println("Stok" + nama + "tidakcukup!Tersisa:" + stok);
+            return;
+        }
+        stok -= jumlahBeli;
+        System.out.println("Beli" + nama + "x" + jumlahBeli +
+               "= Rp" + HitungTotalHarga(jumlahBeli) +
+               " | Sisa stok:" + stok);
+    
     public void tampilInfo(){
         System.out.println("produk: "+nama);
         System.out.println("kategori: "+kategori);
