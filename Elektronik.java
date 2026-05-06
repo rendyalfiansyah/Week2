@@ -36,6 +36,10 @@ public int getGaransiTahun(){
         return hitungTotalHarga(jumlahBeli) + hitungPajak(jumlahBeli);
     }
 
+    @Override
+    public double hitungPajak(double harga) {
+        return harga * 0.20;
+    }
 
 
     public void setgaransi (int gar
