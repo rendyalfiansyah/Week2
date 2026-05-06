@@ -16,18 +16,17 @@ public String getMerek(){
 public int getGaransiTahun(){
     return garansiTahun;
 }
-      super(nama, harga, stok, kategori);
-      this.garansi = garansi;
-    }
 
     @Override
     public void tampilInfo(){
         System.out.println("ELEKTRONIK");
-        super.tampilInfo();
-        System.out.println("Masa garansi:" + garansi + "Hari");
+        System.out.println("Nama : " + getNama());
+        System.out.println("Merek :" + merek());
+        System.out.println("Garansi" + garansiTahun+ "tahun");
+        System.out.println("----------");
     }
 
-    public void setgaransi (int garansi){
+    public void setgaransi (int gar
         if(garansi < 0){
             System.out.println("Masa garansi Tidak Boleh Negatif");
         }else{
