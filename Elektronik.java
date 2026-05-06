@@ -26,9 +26,18 @@ public int getGaransiTahun(){
         System.out.println("----------");
     }
 
-    public double hitungDiskon(int jumlahBeli, double persenPajak){
+    public double hitungDiskon(int jumlahBeli){
         return hitungTotalHarga(jumlahBeli) * PPN;
     }
+    public double hitungDiskon(int jumlahBeli, double persenPajak){
+        return hitungTotalHarga(jumlahBeli) * (persenPajak / 100);
+    }
+    public double hitungHargaSetelahPajak(int jumlahBeli){
+        return hitungTotalHarga(jumlahBeli) + hitungPajak(jumlahBeli);
+    }
+
+
+
     public void setgaransi (int gar
         if(garansi < 0){
             System.out.println("Masa garansi Tidak Boleh Negatif");
