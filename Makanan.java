@@ -8,7 +8,13 @@ public class Makanan {
         super(nama, harga, stok, kategori);
         this.kedaluwarsa= kedaluwarsa;
         this.kategori= kategori;
-        
+    }
+    
+    public String getKedaluwarsa() {
+        return kedaluwarsa;
+    }
+    public String getKategori(){
+        return kategori;
     }
 
     @Override
