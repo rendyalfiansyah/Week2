@@ -45,20 +45,10 @@ abstract class produk {
         System.out.println("Beli" + nama + "x" + jumlahBeli +
                "= Rp" + HitungTotalHarga(jumlahBeli) +
                " | Sisa stok:" + stok);
-    
-    public void tampilInfo(){
-        System.out.println("produk: "+nama);
-        System.out.println("kategori: "+kategori);
-        System.out.println("harga: "+harga);
-        System.out.println("stok: "+stok);
-        System.out.println(".........");
+    }
+     public abstract void tampilInfo();
+
+     
 
     
-    }
-        
-    }
-
-
-// public abstract void tampilInfo();
-   // super.tampilInfo();
-// public abstract  double 
+   
