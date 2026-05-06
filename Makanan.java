@@ -18,8 +18,11 @@ public class Makanan {
     }
 
     @Override
-    public void tampilInfo() { // Override method
-        System.out.println("Makanan");
+    public void tampilInfo() { 
+        System.out.println("MAKANAN");
+        System.out.println("Kategori:" + kategori);
+        System.out.println("Kedaluwarsa:" + kedaluwarsa);
+        
         super.tampilInfo();
         System.out.println("Expired : " + expired + " hari");
     }
